@@ -17,7 +17,8 @@
     <link href="content/custom/playout.css" rel="stylesheet">
     <link href="content/custom/dashboard.css" rel="stylesheet">
     <link href="content/custom/all.css" rel="stylesheet">
-    <link href="content/custom/mobile.css" rel="stylesheet" />
+
+    <!---->
 
     <!--[if lt IE 9]>
         <script src="scripts/respond.min.js"></script>
@@ -361,6 +362,15 @@
     <script src="scripts/heartcode-canvasloader/heartcode-canvasloader-min-0.9.1.js"></script>
     <script src="scripts/datepicker/js/bootstrap-datepicker.js"></script>
     <script src="scripts/jquery-mask/jquery.mask.min.js"></script>
+    
+    <script>
+    if (isMobile.phone || isMobile.tablet) {
+        document.write(
+            '<link href="content/custom/mobile.css" rel="stylesheet" />'+
+            '<script src="scripts/jquery.mobile-1.4.2.min.js"></script' + '>'
+        );
+    }
+    </script>
 
     <script src="app/enums/tipoDeCampo.js"></script>
     <script src="app/enums/acoesDeCampo.js"></script>

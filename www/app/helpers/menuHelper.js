@@ -91,7 +91,8 @@ var menuHelper = new function () {
     this.clickItem = function()
     {
         // Direciona o item de menu clicado pra perto do topo, melhorando a visualização.
-        jQuery('.sidebar').on('click', '.sidebar-menu > ul > li a', function (e)
+        var action = isMobile.phone || isMobile.tablet ? 'tap' : 'click';
+        jQuery('.sidebar').on(action, '.sidebar-menu > ul > li a', function (e)
         {
             var PointClick = this.offsetTop;
             var heightMenuOpen = $('.submenu.open:first').length === 1 ? $('.submenu.open:first').height() : 0;

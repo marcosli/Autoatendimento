@@ -9,24 +9,24 @@ angular loading bar, grid, tablesaw, angular local storage, heartcode, isMobile
 var Config = new function ()
 {
     // Geral
-    //this.hostAPI = window.location.hostname;
-    //this.hostApiPort = ':80';
-
-    //this.hostWebApp = window.location.hostname;
-    //this.hostWebAppPort = ':80';
-
-    //this.urlHostAPI = 'http://' + this.hostAPI + this.hostApiPort + '/aarest',
-    //this.urlHostWebApp = 'http://' + this.hostWebApp + this.hostWebAppPort + '/aaweb',
-
-    // Config App Android 
-    this.hostAPI = 'fmod.cmflex.com.br';
+    this.hostAPI = window.location.hostname;
     this.hostApiPort = ':80';
 
-    this.hostWebApp = "";
-    this.hostWebAppPort = '';
+    this.hostWebApp = window.location.hostname;
+    this.hostWebAppPort = ':80';
 
-    this.urlHostAPI = 'http://' + this.hostAPI + this.hostApiPort + '/aarest';
-    this.urlHostWebApp = "file:///android_asset/www";
+    this.urlHostAPI = 'http://' + this.hostAPI + this.hostApiPort + '/aarest',
+    this.urlHostWebApp = 'http://' + this.hostWebApp + this.hostWebAppPort + '/aaweb',
+
+    // Config App Android 
+    //this.hostAPI = 'fmod.cmflex.com.br';
+    //this.hostApiPort = ':80';
+
+    //this.hostWebApp = "";
+    //this.hostWebAppPort = '';
+
+    //this.urlHostAPI = 'http://' + this.hostAPI + this.hostApiPort + '/aarest';
+    //this.urlHostWebApp = "file:///android_asset/www";
 
 
     this.actionAuth = this.urlHostAPI + '/Api/usuario?fmt=json';
@@ -34,7 +34,7 @@ var Config = new function ()
     this.actionReport = this.urlHostAPI + '/Api/ReportService';
     this.loginUrl = this.urlHostWebApp + '/login.html#/login';
     this.signupUrl = this.urlHostWebApp + '/login.html#/signup';
-    this.frontPageUrl = this.urlHostWebApp + '/index.html';
+    this.frontPageUrl = this.urlHostWebApp + '/';
 
     this.timeLogoutBroserOut = 5000;
 
@@ -65,8 +65,8 @@ var Config = new function ()
     this.UrlApiFormFactory = this.urlHostAPI + '/api/formulario/';
 
     //this.UrlApiDashboardFactory = this.urlHostAPI + '/api/Dashboard'; // produção
-    this.UrlApiDashboardFactory = "http://www.infbras.com.br/api/dashboard.json"; // Config App Android 
-    //this.UrlApiDashboardFactory = 'http://localhost:8080/teste.php';// Config Local
+    //this.UrlApiDashboardFactory = "http://www.infbras.com.br/api/dashboard.json"; // Config App Android 
+    this.UrlApiDashboardFactory = 'http://localhost:8080/teste.php';// Config Local
 
     this.UrlApiMenuFactory = this.urlHostAPI + '/api/Menu'; // produção
     //this.UrlApiMenuFactory = "http://www.infbras.com.br/api/menu.json"; // Config App Android 
