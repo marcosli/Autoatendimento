@@ -1,5 +1,5 @@
 ﻿button.active > .icon-bar-2 {
-    background-color: none;
+    background-color: #666;
 }
 button.active > .icon-bar-1 {
     top: auto;

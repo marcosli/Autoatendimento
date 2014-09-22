@@ -93,16 +93,10 @@ var menuHelper = new function () {
         // Direciona o item de menu clicado pra perto do topo, melhorando a visualização.
         jQuery('.sidebar').on('click', '.sidebar-menu > ul > li a', function (e)
         {
-            var HeightTotal = $(document).height();
-            var HeightTotalWindow = window.innerHeight;
             var PointClick = this.offsetTop;
-            var spacingBottom = HeightTotal - ( PointClick + ( HeightTotalWindow / 2 ) );
-            var spacingTop = HeightTotal - spacingBottom - HeightTotalWindow;
-            spacingTop = ( spacingTop > 0) ? spacingTop : 0;
-            var heightMenuOpen = ($('.submenu.open').length === 1) ? $('.submenu.open').height() : 0 ;
-            var spacingTopConfig = 50;
-
-            var pos = spacingTop + PointClick - spacingTop - heightMenuOpen - spacingTopConfig;
+            var heightMenuOpen = $('.submenu.open:first').length === 1 ? $('.submenu.open:first').height() : 0;
+            var spacingTopConfig = -42;
+            var pos = PointClick - heightMenuOpen - spacingTopConfig;
 
             // Executa o scrollTo e collapseOne, se o item de menu existir sub-itens.
             var one = $(this).parent('li');
