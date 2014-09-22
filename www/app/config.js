@@ -68,7 +68,7 @@ var Config = new function ()
     this.UrlApiDashboardFactory = "http://www.infbras.com.br/api/dashboard.json"; // Config App Android 
     //this.UrlApiDashboardFactory = 'http://localhost:8080/teste.php';// Config Local
 
-    //this.UrlApiMenuFactory = this.urlHostAPI + '/api/Menu'; // produção
-    this.UrlApiMenuFactory = "http://www.infbras.com.br/api/menu.json"; // Config App Android 
+    this.UrlApiMenuFactory = this.urlHostAPI + '/api/Menu'; // produção
+    //this.UrlApiMenuFactory = "http://www.infbras.com.br/api/menu.json"; // Config App Android 
     //this.UrlApiMenuFactory = "http://localhost:8080/menu.json"; // Config Local
 };
