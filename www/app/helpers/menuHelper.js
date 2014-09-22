@@ -137,7 +137,7 @@ var menuHelper = new function () {
         } else {
             $('.sidebar-menu ul').append(
                 '<li>' +
-                    '<a href="' + Config.urlHostWebApp + '" >' +
+                    '<a href="' + Config.frontPageUrl + '" >' +
                         '<div class="pre-icon">' +
                             '<i class="home icon glyphicon glyphicon-home"></i>' +
                         '</div>' +

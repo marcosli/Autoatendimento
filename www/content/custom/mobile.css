@@ -23,7 +23,8 @@
 
 .mural-box-titulo h2, .mural-box-content,
 .info1-saldo div, .info1-saldo span,
-.info2-col1 span, .info2-col2-box1 span
+.info2-col1 span, .info2-col2-box1 span,
+#toast-container *
 {
     text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #666 /*{a-page-shadow-color}*/;
 }

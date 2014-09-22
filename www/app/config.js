@@ -28,6 +28,7 @@ var Config = new function ()
     this.urlHostAPI = 'http://' + this.hostAPI + this.hostApiPort + '/aarest';
     this.urlHostWebApp = "file:///android_asset/www";
 
+
     this.actionAuth = this.urlHostAPI + '/Api/usuario?fmt=json';
     this.actionMenu = this.urlHostAPI + '/Api/Menu?fmt=json';
     this.actionReport = this.urlHostAPI + '/Api/ReportService';
