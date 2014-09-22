@@ -1,0 +1,92 @@
+﻿.cmFormulario {
+    width: 768px;
+}
+.cmFormulario [class^=col-] {
+    padding: 0;
+}
+.cmFormulario > form > div.col-md-12 > h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.cmFormulario img {
+    width: auto
+}
+.cmFormulario select {
+
+}
+
+
+.box {
+    margin: 0;
+}
+.box, .box > div,
+.box > fieldset > div
+/*.box > fieldset > legend*/
+{
+    border: 1px solid #666;
+}
+
+.box > div[id^=etapa],
+.box > fieldset > div[id^=etapa],
+.box > fieldset > legend
+{
+    padding: 0 5px 3px;
+}
+.box input[type=text], .box textarea, .box select {
+    border: none;
+    box-shadow: none;
+    padding: 2px 5px 0;
+    height: 20px;
+}
+.box select {
+    top: -2px;
+    position: relative;
+}
+.box textarea {
+    padding-top: 0;
+}
+.box label {
+    color: #666;
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+span.titulosecao {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+/* Parametros existentes no cadastro do etapa (GerenciaAA) */
+#etapa_grupoTituloRelat {
+    text-align: right
+}
+#label_grupoDadosPessoais {
+    margin: 0;
+}
+#etapa_Gravida {
+    padding-bottom: 8px;
+    padding-top: 14px;
+}
+#label_Gravida {
+    margin-left: 5px;
+}
+#control_ExibeTestes {
+    margin-right: 5px;
+}
+#etapa_grupoTestes {
+    border: none;
+}
+
+
+/* Reset Fieldset e legend bootstrap */
+fieldset {
+    border: 1px solid #999;
+    padding: 5px 10px 10px;
+}
+fieldset > legend {
+    width: inherit;
+}

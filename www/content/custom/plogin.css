@@ -1,0 +1,251 @@
+* {
+	font-size: 12px;
+	color: #666;
+	font-family: Roboto;
+}
+html, body {
+	height: 100%;
+}
+
+.loginc {
+	min-height: 100%;
+	min-width: 320px;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn, input.form-control {
+	font-size: 1.28em;
+	padding: 0.48em 0.95em;
+}
+input.form-control {
+	height: 3em;
+	padding: 0.5em 3em 0.5em 0.5em;
+	border-radius: 0.2em;
+}
+input[type=checkbox] {
+	width: 1em;
+	height: 1em;
+	margin: 0.3em;
+}
+.logo {
+	width: 20em;
+	margin: 2em auto 2em;
+	display: block;
+}
+
+.logo a {
+	display: block;
+}
+
+.logo > a > img {
+	width: 100%;
+	display: block;
+}
+
+.msg-entry .title {
+	font-weight: 700;
+	font-size: 1.4em;
+	display: block;
+}
+
+.msg-entry .description {
+	font-weight: 700;
+	font-size: 1.2em;
+	display: block;
+	margin-bottom: 1em;
+}
+.main {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 7em;
+}
+.main > .form {
+	padding: 1em;
+	position: relative;
+	margin: 0 auto;
+}
+.main form {
+	background-color: #f1f1f1;
+	padding: 2em;
+}
+.main > .title {
+	display: block;
+	width: 53em;
+	height: 7em;
+	background-color: #494e7b;
+	text-align: center
+}
+.main > .title > span {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2em;
+	display: block;
+	padding-top: 1em;
+}
+.form-group .checkbox {
+	float: left;
+	padding-top: 0.25em;
+	line-height: 2em;
+	top: 0.3em;
+	left: 0;
+	position: relative;
+}
+.form-group .checkbox span {
+	font-size: 1.1em;
+	top: 0.3em;
+	left: 0.3em;
+	position: relative;
+	color: #999;
+}
+.form-group.last {
+	margin: 3em 0 0 0;
+}
+.form-group input[type=checkbox] {
+	width: 2em;
+	height: 2em;
+}
+.form .alert {
+    font-size: 1.2em;
+}
+.icon {
+	background-image: url('../img/icons/icons-20x20.png');
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 2.75em;
+	top: 1.2em;
+}
+.icon-lock-user {
+	background-position: 0 0;
+}
+
+.icon-lock-email {
+    background-position: 0 20px;
+    color: #fff;
+    padding: 5px 0 0 5px;
+}
+
+.icon-lock-circ {
+    background-position: 0 40px;
+}
+.submit {
+	float: right;
+}
+.submit button[type=submit] {
+    height: 2.75em;
+    border-radius: 0.2em;
+    padding: 0 2em;
+	background-color: #494e7b;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	-o-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+}
+.submit button[type=submit]:hover {
+	opacity: 0.85;
+	filter:alpha(opacity=85);
+}
+.form-horizontal .control-label, .form-horizontal label, .form-horizontal a {
+	text-align: left;
+	font-weight: normal;
+	font-size: 0.8em;
+	color: #494e7b;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 0.2em;
+}
+
+footer {
+	margin-bottom: 0.5em;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4em;
+}
+footer span, footer div, footer div a {
+	color: #999;
+	font-size: 1em;
+	height: 1.6em;
+}
+footer div a {
+	text-decoration: underline;
+}
+
+.toast-title{
+    font-size: 1.4em;
+    font-weight:normal;
+    color: #fff;
+}
+.toast-message{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.toast-message a, .toast-message span, .toast-message p{
+    font-size: 1em;
+    color: #fff;
+}
+
+@media (min-width: 480px) {
+    .main form {
+        padding: 4em 3em;
+    }
+}
+
+@media (min-width: 768px) {
+	* {
+		font-size:10px;
+	}
+	.main {
+		max-width: 53em;
+	}
+	.main > .form {
+		width: 53em;
+        padding: 4em 3em;
+		border: 0.125em #ddd solid;
+	}
+	.main form {
+		padding: 5em 10em 6em;
+	}
+	.logo {
+		width: 26em;
+		margin: 3em auto 4em;
+	}
+	.form-group.ultimo {
+		margin-bottom: 4em;
+	}
+    .submit button[type=submit] {
+        height: 3.25em;
+        padding: 0 2.75em;
+    }
+    footer span, footer div, footer div a {
+        font-size: 1.2em;
+    }
+}
+}
+
+@media (min-width: 992px) {
+	input[type=checkbox] {
+		margin: 0.325em;
+	}
+}
+
+@media (min-width: 1200px) {
+/*
+	* {
+		font-size:12px;
+	}
+	input[type=checkbox] {
+		margin: 0.375em;
+	}
+	.icon {
+		top: 1.3em;
+	}
+*/
+}

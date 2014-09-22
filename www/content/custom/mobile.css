@@ -1,0 +1,17 @@
+﻿button.active > .icon-bar-2 {
+    background-color: none;
+}
+button.active > .icon-bar-1 {
+    top: auto;
+    transform: none;
+    position: static;
+}
+button.active > .icon-bar-3 {
+    top: auto;
+    transform: none;
+    position: static;
+}
+
+#canvasloader-container {
+    position: fixed;
+}

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" data-ng-app="AutoAtendimento">
+<head>
+
+    <title>Login - Auto atendimento</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="content/bootstrap.min.css" rel="stylesheet">
+    <link href="content/toastr.min.css" rel="stylesheet">
+
+    <link href="content/custom/font.css" rel="stylesheet">
+    <link href="content/custom/plogin.css" rel="stylesheet">
+    <link href="content/custom/all.css" rel="stylesheet">
+    <link href="content/custom/mobile.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="scripts/respond.min.js"></script>
+        <script src="scripts/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .main > .title {
+            background-color: rgb(25,59,94);
+        }
+
+        .submit button[type=submit] {
+            background-color: rgb(120, 17, 49);
+        }
+
+        .form-horizontal .control-label, .form-horizontal label, .text-canvasloader, form-horizontal .a {
+            color: rgb(25,59,94);
+        }
+    </style>
+
+</head>
+<body data-ng-controller="loginController">
+
+    <div class="loginc">
+
+        <header class="logo">
+            <a href="#">
+                <img src="content/img/logo.png" />
+            </a>
+        </header>
+
+        <section class="main" data-ng-view=""></section>
+
+        <footer>
+            <div>CMFlex | Um produto da <a href="http://www.cmcorp.com.br/" target="_blank">CMCorp Soluções</a></div>
+            <span>© Copyright 2014 | </span>
+            <span class="hidden-xs">Todos os direitos reservados | </span>
+            <span>Política de Privacidade</span>
+        </footer>
+
+    </div>
+
+    <div class="canvasloader-wrapper"></div>
+    <div id="canvasloader-container"></div>
+
+    <script src="scripts/jquery-1.11.0.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/toastr.min.js"></script>
+    <script src="scripts/heartcode-canvasloader/heartcode-canvasloader-min-0.9.1.js"></script>
+    <script src="scripts/isMobile/isMobile.min.js"></script>
+
+    <script src="app/helpers/cookieHelper.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/helpers/extensionsHelper.js"></script>
+    <script src="app/helpers/mensagemHelper.js"></script>
+
+
+    <!-- 3rd party libraries -->
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/angular-local-storage/angular-local-storage.min.js"></script>
+    <script src="scripts/loading-bar/loading-bar.js"></script>
+
+    <!-- Load app main script -->
+    <script src="app/app.js?v=1"></script>
+
+    <!-- Load factories -->
+    <script src="app/factories/authInterceptorFactory.js?v=1"></script>
+    <script src="app/factories/authFactory.js?v=1"></script>
+    <script src="app/factories/tokensManagerFactory.js?v=1"></script>
+    <script src="app/factories/menuFactory.js"></script>
+    <!-- Load controllers -->
+    <script src="app/controllers/indexController.js?v=1"></script>
+    <script src="app/controllers/loginController.js?v=1"></script>
+    <script src="app/controllers/signupController.js?v=1"></script>
+    <script src="app/controllers/refreshController.js?v=1"></script>
+    <script src="app/controllers/tokensManagerController.js?v=1"></script>
+    <!-- Load custom filters -->
+    <!-- Load custom directives -->
+
+</body>
+</html>
